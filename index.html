@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Independence Day 2022</p>
+    <script>
+        today=new Date();
+var freedom=new Date(today.getFullYear(), 7, 14);
+if (today.getMonth()==7 && today.getDate()>14) 
+{
+freedom.setFullYear(freedom.getFullYear()+1); 
+}  
+var one_day=1000*60*60*24;
+document.write(Math.ceil((freedom.getTime()-today.getTime())/(one_day))+
+"  Days left from  Independence Day ");
+
+    </script>
+</body>
+</html>
